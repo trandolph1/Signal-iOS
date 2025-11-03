@@ -5825,7 +5825,7 @@
 		C597942EF64D456BBE9782A2 /* Pods-SignalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalTests.debug.xcconfig"; path = "Target Support Files/Pods-SignalTests/Pods-SignalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D2179CFB16BB0B3A0006F3AB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		D2179CFD16BB0B480006F3AB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		D221A089169C9E5E00537ABF /* Signal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Signal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D221A089169C9E5E00537ABF /* ClearSIGNAL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClearSIGNAL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D221A08D169C9E5E00537ABF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D221A08F169C9E5E00537ABF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D221A091169C9E5E00537ABF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -11363,7 +11363,7 @@
 		D221A08A169C9E5E00537ABF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D221A089169C9E5E00537ABF /* Signal.app */,
+				D221A089169C9E5E00537ABF /* ClearSIGNAL.app */,
 				342FFE8827245850000AC89F /* SignalNSE.appex */,
 				F9C5C897289451B900548EEE /* SignalServiceKit.framework */,
 				F9C5C89E289451B900548EEE /* SignalServiceKitTests.xctest */,
@@ -14853,7 +14853,7 @@
 			);
 			name = Signal;
 			productName = RedPhone;
-			productReference = D221A089169C9E5E00537ABF /* Signal.app */;
+			productReference = D221A089169C9E5E00537ABF /* ClearSIGNAL.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D221A0A9169C9E5F00537ABF /* SignalTests */ = {
@@ -14941,7 +14941,6 @@
 					};
 					453518671FC635DD00210559 = {
 						CreatedOnToolsVersion = 9.2;
-						DevelopmentTeam = U68MSDN6DR;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -14993,7 +14992,6 @@
 						};
 					};
 					D221A0A9169C9E5F00537ABF = {
-						DevelopmentTeam = U68MSDN6DR;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						TestTargetID = D221A088169C9E5E00537ABF;
@@ -19319,6 +19317,7 @@
 				CODE_SIGN_ENTITLEMENTS = SignalNSE/SignalNSE.entitlements;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = HZHSAK35KG;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -19333,6 +19332,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(SIGNAL_BUNDLEID_PREFIX).signal.SignalNSE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -19387,6 +19387,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "$(SIGNAL_BUNDLEID_PREFIX).signal.SignalNSE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -19424,6 +19425,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = SignalNSE/SignalNSE.entitlements;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = HZHSAK35KG;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -19443,6 +19445,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "$(SIGNAL_BUNDLEID_PREFIX).signal.SignalNSE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -19480,6 +19483,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = SignalNSE/SignalNSE.entitlements;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = HZHSAK35KG;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -19499,6 +19503,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "$(SIGNAL_BUNDLEID_PREFIX).signal.SignalNSE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -19524,6 +19529,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = HZHSAK35KG;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -19542,6 +19548,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.signal.SignalUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -19583,6 +19590,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = HZHSAK35KG;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -19606,6 +19614,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.signal.SignalUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -19649,6 +19658,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = HZHSAK35KG;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -19672,6 +19682,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.signal.SignalUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -19715,6 +19726,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = HZHSAK35KG;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -19738,6 +19750,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.signal.SignalUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -19764,6 +19777,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = HZHSAK35KG;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -19778,6 +19792,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.signal.SignalUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -19815,6 +19830,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = HZHSAK35KG;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -19834,6 +19850,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.signal.SignalUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -19873,6 +19890,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = HZHSAK35KG;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -19892,6 +19910,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.signal.SignalUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -19931,6 +19950,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = HZHSAK35KG;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -19950,6 +19970,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.signal.SignalUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -19974,6 +19995,7 @@
 				CODE_SIGN_ENTITLEMENTS = SignalShareExtension/SignalShareExtension.entitlements;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = HZHSAK35KG;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -19990,6 +20012,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(SIGNAL_BUNDLEID_PREFIX).signal.shareextension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -20023,6 +20046,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = "SignalShareExtension/SignalShareExtension-AppStore.entitlements";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = HZHSAK35KG;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -20044,6 +20068,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "$(SIGNAL_BUNDLEID_PREFIX).signal.shareextension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -20168,6 +20193,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Signal/Signal.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HZHSAK35KG;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -20179,16 +20205,19 @@
 				);
 				GCC_STRICT_ALIASING = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/Signal/Signal-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = ClearSIGNAL;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				LLVM_LTO = NO;
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(SIGNAL_BUNDLEID_PREFIX).signal";
-				PRODUCT_NAME = Signal;
+				PRODUCT_NAME = ClearSIGNAL;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -20201,6 +20230,7 @@
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Signal.app/Signal";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = HZHSAK35KG;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -20246,6 +20276,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(SIGNAL_BUNDLEID_PREFIX).${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = SignalTests;
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -20280,6 +20311,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = SignalShareExtension/SignalShareExtension.entitlements;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = HZHSAK35KG;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -20301,6 +20333,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "$(SIGNAL_BUNDLEID_PREFIX).signal.shareextension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -20421,6 +20454,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Signal/Signal.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HZHSAK35KG;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -20432,16 +20466,19 @@
 				);
 				GCC_STRICT_ALIASING = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/Signal/Signal-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = ClearSIGNAL;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				LLVM_LTO = NO;
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(SIGNAL_BUNDLEID_PREFIX).signal";
-				PRODUCT_NAME = Signal;
+				PRODUCT_NAME = ClearSIGNAL;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -20454,6 +20491,7 @@
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Signal.app/Signal";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = HZHSAK35KG;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -20499,6 +20537,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(SIGNAL_BUNDLEID_PREFIX).${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = SignalTests;
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -20533,6 +20572,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = SignalShareExtension/SignalShareExtension.entitlements;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = HZHSAK35KG;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -20554,6 +20594,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "$(SIGNAL_BUNDLEID_PREFIX).signal.shareextension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -20780,6 +20821,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = HZHSAK35KG;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -20790,16 +20832,19 @@
 				);
 				GCC_STRICT_ALIASING = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/Signal/Signal-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = ClearSIGNAL;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				LLVM_LTO = NO;
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(SIGNAL_BUNDLEID_PREFIX).signal";
-				PRODUCT_NAME = Signal;
+				PRODUCT_NAME = ClearSIGNAL;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -20817,6 +20862,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Signal/Signal-AppStore.entitlements";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HZHSAK35KG;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -20828,16 +20874,19 @@
 				);
 				GCC_STRICT_ALIASING = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/Signal/Signal-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = ClearSIGNAL;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				LLVM_LTO = NO;
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(SIGNAL_BUNDLEID_PREFIX).signal";
-				PRODUCT_NAME = Signal;
+				PRODUCT_NAME = ClearSIGNAL;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -20850,6 +20899,7 @@
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Signal.app/Signal";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = HZHSAK35KG;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -20896,6 +20946,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(SIGNAL_BUNDLEID_PREFIX).${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = SignalTests;
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				VALID_ARCHS = "arm64 armv7s armv7 i386 x86_64";
@@ -20909,6 +20960,7 @@
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Signal.app/Signal";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = HZHSAK35KG;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -20954,6 +21006,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(SIGNAL_BUNDLEID_PREFIX).${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = SignalTests;
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -20973,6 +21026,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = HZHSAK35KG;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = HZHSAK35KG;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -20992,6 +21047,7 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) -Wwarning DeprecatedDeclaration";
 				PRODUCT_BUNDLE_IDENTIFIER = org.signal.SignalServiceKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -21013,6 +21069,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = HZHSAK35KG;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = HZHSAK35KG;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -21032,6 +21090,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.signal.SignalServiceKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -21053,6 +21112,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = HZHSAK35KG;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = HZHSAK35KG;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -21072,6 +21133,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.signal.SignalServiceKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -21093,6 +21155,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = HZHSAK35KG;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = HZHSAK35KG;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -21112,6 +21176,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.signal.SignalServiceKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -21138,6 +21203,8 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = HZHSAK35KG;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = HZHSAK35KG;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -21152,6 +21219,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.signal.SignalServiceKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -21191,6 +21259,8 @@
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = HZHSAK35KG;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = HZHSAK35KG;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -21210,6 +21280,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.signal.SignalServiceKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -21251,6 +21322,8 @@
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = HZHSAK35KG;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = HZHSAK35KG;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -21270,6 +21343,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.signal.SignalServiceKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -21311,6 +21385,8 @@
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = HZHSAK35KG;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = HZHSAK35KG;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -21330,6 +21406,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.signal.SignalServiceKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = com.clearos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
